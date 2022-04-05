@@ -46,9 +46,9 @@ public class Author {
         this.lastName = lastName;
     }
 
-    public List<Book> getBooks() {
+    /*public List<Book> getBooks() {
         return books;
-    }
+    }*/
 
     public void setBooks(List<Book> books) {
         this.books = books;

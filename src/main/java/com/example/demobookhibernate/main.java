@@ -6,7 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import static jdk.internal.org.jline.utils.Colors.s;
+
 
 public class main {
     public static void main(String[] args) {
@@ -18,7 +18,8 @@ public class main {
         Author a = new Author("Gabriel", "García-Márquez");
         a.addBook(b);
         a.addBook(b2);
-        entityManager.persist(b);
+        System.out.println(a);
+        entityManager.persist(a);
         entityManager.getTransaction().commit();
         entityManager.close();
         entityManagerFactory.close();
